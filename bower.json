@@ -1,0 +1,19 @@
+{
+  "name": "Electron Angular Bootstrap Recipe",
+  "authors": [
+    "Gunnar Gehrke"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [],
+  "dependencies": {
+    "angular": "latest",
+    "angular-route": "latest",
+    "bootstrap": "^3.3.7",
+    "fontawesome": "latest",
+    "angular-bootstrap": "latest"
+  }
+}

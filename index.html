@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de"
+      ng-app="app"
+        ng-controller="AppCtrl">
+<head>
+    <meta charset="UTF-8">
+    <base href="./">
+
+    <title ng-bind="title"></title>
+
+    <!--Bootstrap-->
+    <link id="bootstrap-css"
+          rel="stylesheet"
+          href="./bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+
+    <link rel="stylesheet"
+          href="./public/styles/styles.css"/>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" ng-click="setRoute('')"><i class="fab fa-angular"></i> <span ng-bind="title"></span></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a ng-click="setRoute('')">Home</a></li>
+                <li><a ng-click="setRoute('page1')">Page1</a></li>
+                <li><a ng-click="setRoute('page2')">Contact</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container">
+    <ng-view></ng-view>
+</div>
+<!-- build:remove -->
+<!-- Connect to server process -->
+<script>require('electron-connect').client.create()</script>
+<!-- end:build -->
+
+<!--FontAwesome-->
+<script src="./bower_components/fontawesome/svg-with-js/js/fontawesome-all.min.js"></script>
+
+<!--Angular-->
+<script src="./bower_components/angular/angular.js"></script>
+<script src="./bower_components/angular-route/angular-route.js"></script>
+<script src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+<!--App-->
+<script src="./public/javascripts/app/app.js"></script>
+<script src="./public/javascripts/app/controllers/controllers.js"></script>
+<script src="./public/javascripts/app/filters/filters.js"></script>
+<script src="./public/javascripts/app/components/components.js"></script>
+<script src="./public/javascripts/app/directives/directives.js"></script>
+<script src="./public/javascripts/app/factories/factories.js"></script>
+
+<script src="./public/javascripts/app/controllers/app.ctrl.js"></script>
+</body>
+</html>

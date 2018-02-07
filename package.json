@@ -1,0 +1,27 @@
+{
+  "name": "Electron-Angular-Bootstrap-Recipe",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "author": "Gunnar Gehrke",
+  "scripts": {
+    "start": "gulp serve"
+  },
+  "devDependencies": {
+    "electron": "latest",
+    "electron-connect": "latest",
+    "gulp": "^3.9.1"
+  },
+  "build": {
+    "appId": "com.electron-angular-bootstrap",
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "menuCategory": true
+    }
+  },
+  "dependencies": {
+    "electron-debug": "latest",
+    "electron-is-dev": "^0.3.0"
+  }
+}
