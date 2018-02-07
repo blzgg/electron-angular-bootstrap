@@ -1,9 +1,13 @@
 {
-  "name": "Electron-Angular-Bootstrap-Recipe",
+  "name": "Electron-Angular-Bootstrap",
   "version": "0.0.1",
-  "description": "",
+  "description": "Electron Angular Bootstrap Recipe",
   "main": "main.js",
-  "author": "Gunnar Gehrke",
+  "authors": [
+    "Gunnar Gehrke"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/blzgg/electron-angular-bootstrap.git",
   "scripts": {
     "start": "gulp serve"
   },

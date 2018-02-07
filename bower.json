@@ -1,9 +1,9 @@
 {
-  "name": "Electron Angular Bootstrap Recipe",
+  "name": "Electron-Angular-Bootstrap",
   "authors": [
     "Gunnar Gehrke"
   ],
-  "description": "",
+  "description": "Electron Angular Bootstrap Recipe",
   "main": "",
   "moduleType": [],
   "license": "MIT",
